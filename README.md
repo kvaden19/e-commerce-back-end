@@ -2,9 +2,6 @@
 
 ## TODOs:
 
-### Setup: 
-- Use the `schema.sql` file in the `db` folder to create your database with MySQL shell commands. 
-
 ### Models: 
 
 - Set up the following models:
