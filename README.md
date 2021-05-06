@@ -2,39 +2,18 @@
 
 ## TODOs:
 
-### Models: 
-
-- Set up the following models:
-* `ProductTag`
-  * `id`
-    * Integer.
-    * Doesn't allow null values.
-    * Set as primary key.
-    * Uses auto increment.
-  * `product_id`
-    * Integer.
-    * References the `Product` model's `id`.
-  * `tag_id`
-    * Integer.
-    * References the `Tag` model's `id`.
-
-
-
-
-- Set up associations:
-* `Product` belongs to `Category`, and `Category` has many `Product` models, as a category can have multiple products but a product can only belong to one category.
-* `Product` belongs to many `Tag` models, and `Tag` belongs to many `Product` models. Allow products to have multiple tags and tags to have many products by using the `ProductTag` through model.
-Hint: Make sure you set up foreign key relationships that match the column we created in the respective models.
-
-
 ### Routes:
 - WHEN I open API GET routes in Insomnia Core for categories, products, or tags THEN the data for each of these routes is displayed in a formatted JSON
 - WHEN I test API POST, PUT, and DELETE routes in Insomnia Core THEN I am able to successfully create, update, and delete data in my database
 
-### Testing:
-- WHEN I enter schema and seed commands (npm run seed) THEN a development database is created and is seeded with test data
+### Testing
 
 ### Deliverables:
 - README
 - Walkthru video
+
+#### Questions:
+Why are product_tag and ProductTag both created?
+product_tag is the one that gets seeded
+Did I need to make a Model ProductTag?
 
