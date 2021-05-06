@@ -5,35 +5,6 @@
 ### Models: 
 
 - Set up the following models:
-* `Product`
-  * `id`
-    * Integer.
-    * Doesn't allow null values.
-    * Set as primary key.
-    * Uses auto increment
-  * `product_name`
-    * String.
-    * Doesn't allow null values
-  * `price`
-    * Decimal.
-    * Doesn't allow null values.
-    * Validates that the value is a decimal
-  * `stock`
-    * Integer.
-    * Doesn't allow null values.
-    * Set a default value of `10`.
-    * Validates that the value is numeric
-  * `category_id`
-    * Integer.
-    * References the `Category` model's `id`
-* `Tag`
-  * `id`
-    * Integer.
-    * Doesn't allow null values.
-    * Set as primary key.
-    * Uses auto increment.
-  * `tag_name`
-    * String.
 * `ProductTag`
   * `id`
     * Integer.
@@ -62,4 +33,8 @@ Hint: Make sure you set up foreign key relationships that match the column we cr
 
 ### Testing:
 - WHEN I enter schema and seed commands (npm run seed) THEN a development database is created and is seeded with test data
+
+### Deliverables:
+- README
+- Walkthru video
 
